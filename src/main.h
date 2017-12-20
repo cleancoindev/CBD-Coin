@@ -82,15 +82,15 @@ static const unsigned int BLOCK_DOWNLOAD_TIMEOUT = 60;
 /** Defaults to yes, adaptively increase/decrease max/min/priority along with the re-calculated block size **/
 static const unsigned int DEFAULT_SCALE_BLOCK_SIZE_OPTIONS = 1;
 /** PoS Reward */
-static const int64_t COIN_YEAR_REWARD = 25 * COIN; // Corrected in v1.0.2.0+
+static const int64_t COIN_YEAR_REWARD = 25 * COIN; //
 /** PoS Reward Fixed */
-static const int64_t COIN_YEAR_REWARD_FIXED = 25 * CENT; // 25%
+static const int64_t COIN_YEAR_REWARD_FIXED = 25 * CENT; //
 /** PoS Superblock Reward */
-static const int64_t COIN_SPRB_REWARD = 35 * COIN; // Corrected in v1.0.2.0+
+static const int64_t COIN_SPRB_REWARD = 35 * COIN; // 
 /** PoS Superblock Reward Fixed */
-static const int64_t COIN_SPRB_REWARD_FIXED = 35 * CENT; // 35%
+static const int64_t COIN_SPRB_REWARD_FIXED = 35 * CENT; // Updated GanjaProject MN Payout fix
 /** MN Reward Fixed */
-static const int64_t MN_REWARD_FIXED = 50 * CENT; // 9% total, 1.5%/3% for standard net, 7.5%/6% for MNs
+static const int64_t MN_REWARD_FIXED = 25 * COIN; // 
 /** Block spacing preferred */
 static const int64_t BLOCK_SPACING = 5 * 60;
 /** Block spacing minimum */
