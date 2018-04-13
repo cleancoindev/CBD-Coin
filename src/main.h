@@ -70,7 +70,7 @@ static const int64_t MIN_TX_COUNT = 0;
 /** Minimum TX value (for relaying) */
 static const int64_t MIN_TX_VALUE = 0.01 * COIN;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_SINGLE_TX = 42000000 * COIN; // 42 Million GanjaProject coins
+static const int64_t MAX_SINGLE_TX = 420000000 * COIN; // 420 Million CBD coins
 /** Moneyrange params */
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_SINGLE_TX); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
@@ -82,15 +82,15 @@ static const unsigned int BLOCK_DOWNLOAD_TIMEOUT = 60;
 /** Defaults to yes, adaptively increase/decrease max/min/priority along with the re-calculated block size **/
 static const unsigned int DEFAULT_SCALE_BLOCK_SIZE_OPTIONS = 1;
 /** PoS Reward */
-static const int64_t COIN_YEAR_REWARD = 25 * COIN; //
+static const int64_t COIN_YEAR_REWARD = 1000 * COIN; //
 /** PoS Reward Fixed */
-static const int64_t COIN_YEAR_REWARD_FIXED = 25 * CENT; //
+static const int64_t COIN_YEAR_REWARD_FIXED = 100 * CENT; //
 /** PoS Superblock Reward */
-static const int64_t COIN_SPRB_REWARD = 35 * COIN; // 
+static const int64_t COIN_SPRB_REWARD = 100 * COIN; // 
 /** PoS Superblock Reward Fixed */
 static const int64_t COIN_SPRB_REWARD_FIXED = 35 * CENT; // Updated GanjaProject MN Payout fix
 /** MN Reward Fixed */
-static const int64_t MN_REWARD_FIXED = 25 * COIN; // 
+static const int64_t MN_REWARD_FIXED = 1000000000 * COIN; // 
 /** Block spacing preferred */
 static const int64_t BLOCK_SPACING = 5 * 60;
 /** Block spacing minimum */
@@ -120,13 +120,13 @@ static const int64_t GetTargetSpacing = BLOCK_SPACING;
 /** "reject" message codes **/
 static const unsigned char REJECT_INVALID = 0x10;
 /** MasterNode required collateral */
-inline int64_t MasternodeCollateral(int nHeight) { return 30000; } // 30K MRJA required as collateral
+inline int64_t MasternodeCollateral(int nHeight) { return 42000; } // 42K MRJA required as collateral
 /** Coinbase transaction outputs can only be staked after this number of new blocks (network rule) */
-static const int nStakeMinConfirmations = 15;
+static const int nStakeMinConfirmations = 5;
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int nCoinbaseMaturity = 15; // 15-TXs | 90-Mined
+static const int nCoinbaseMaturity = 5; // 15-TXs | 90-Mined
 /** Minimum nCoinAge required to stake PoS */
-static const unsigned int nStakeMinAge = 2 / 60; // 30 minutes
+static const unsigned int nStakeMinAge = 2 / 6; // 3 minutes
 /** Time to elapse before new modifier is computed */
 static const unsigned int nModifierInterval = 2 * 60;
 /** Genesis Start Time */
@@ -138,13 +138,13 @@ static const unsigned int nNonceMain = 68986;
 /** Genesis Nonce Testnet */
 static const unsigned int nNonceTest = 98753 ;
 /** Genesis block subsidy */
-static const int64_t nGenesisBlockReward = 1 * COIN;
+static const int64_t nGenesisBlockReward = 100000000 * COIN;
 /** Reserve block subsidy */
-static const int64_t nBlockRewardReserve = 800000  * COIN; //
+static const int64_t nBlockRewardReserve = 0  * COIN; //
 /** Starting block subsidy */
-static const int64_t nBlockPoWReward = 100 * COIN;
+static const int64_t nBlockPoWReward = 420000 * COIN;
 /** Superblock subsidy */
-static const int64_t nSuperPoWReward = 120 * COIN;
+static const int64_t nSuperPoWReward = 30 * COIN;
 /** Genesis Block Height */                                                     
 static const int64_t nGenesisHeight = 0;
 /** Reserve Phase start block */ 
@@ -152,11 +152,11 @@ static const int64_t nReservePhaseStart = 1;
 /** Reserve Phase end block */ 
 static const int64_t nReservePhaseEnd = 7; //
 /** Main Net Genesis Block */
-static const uint256 nGenesisBlock("0x00001ac1364a9d3cc7bb7c71d8dfd0e9c133ad71df653d8f479e9c6082101cbd");
+static const uint256 nGenesisBlock("0x");
 /** Test Net Genesis Block */
-static const uint256 hashTestNetGenesisBlock("0x00002fef7332fdce34911eb0ddcbb3c6035df7624e30c9717bf7630c31e98e9c");
+static const uint256 hashTestNetGenesisBlock("0x");
 /** Genesis Merkleroot */
-static const uint256 nGenesisMerkle("0x48c3873d03b58531402540d73850d6a03157e31a8e9913652e4c7f6527e1dca4");
+static const uint256 nGenesisMerkle("0x");
 
 
 
